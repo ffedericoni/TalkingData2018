@@ -1,0 +1,13 @@
+- Train on first three days and validate on 4th day
+- https://www.kaggle.com/c/talkingdata-adtracking-fraud-detection/discussion/51411:
+    
+    Get rid of the year and month as they are all the same
+    I will propose to get rid of the minutes and seconds as well. One can still detect clicks coming from the same IP within an "unreasonable" amount of time by just comparing the date + hour. Even in the beginning simply using only the hour will be more than good enough.
+    use dask instead of pandas (way faster!!!!). 
+    in my opinion the column "attributed time" is totally useless - don't even read it when loading the files (the train data). What does it matter when it was attributed if you have to predict whether it is attributed or not?
+    Count the clicks from each IP and store this information (as a person with experience in online advertisement I can guarantee you that this will be one of the most influential features). Afterwards delete IP.
+    Actually before deleting it you can also create a column indicating if the user made more than x (say, 5) clicks within an hour.
+    Use the correct datatypes when loading the data
+    Use gc (garbage collector). Extremely easy to use and very helpful. Constantly delete anything that is not necessary anymore.
+    
+- 
