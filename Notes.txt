@@ -10,4 +10,4 @@
     Use the correct datatypes when loading the data
     Use gc (garbage collector). Extremely easy to use and very helpful. Constantly delete anything that is not necessary anymore.
     
-- 
+- Prova a aggiungere colonne che sono funzioni di 'ip': mod(ip, 65536), ip/65536,...
