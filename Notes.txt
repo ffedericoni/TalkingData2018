@@ -10,4 +10,5 @@
     Use the correct datatypes when loading the data
     Use gc (garbage collector). Extremely easy to use and very helpful. Constantly delete anything that is not necessary anymore.
     
-- Prova a aggiungere colonne che sono funzioni di 'ip': mod(ip, 65536), ip/65536,...
+- Feature Score =  {'freqipdev': 1011, 'device': 480, 'ip': 688, 'channel': 1961, 'os': 1351, 'time_hr': 410, 'freqiphr': 993, 'time_min': 656, 'app': 2112, 'freqip': 1054} XGBoost
+
